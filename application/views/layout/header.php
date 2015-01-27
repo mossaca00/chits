@@ -11,15 +11,46 @@
 
 		<div class="container">
 
-			<div class="panel panel-success my-borders">
+			<div class="row my-borders">
 
-				<div class="panel-heading">
-					<h1> Chits </h1>
+				<div class="col-md-12">
+					<h1> Header </h1>
 				</div>
-				<div class="panel-body">
+
+				<div class="col-md-12">
+
 					<div class="navbar navbar-default">
-						
+
 					</div>
-					<!-- HEADER END -->
+
+				</div><!--/header-->
+
+				<div class="col-md-3">
+					<ul class="nav nav-stacked nav-pills">
+						<li class="active"><a href="#"> Patient Search </a></li>
+						<li class=""><a href="#"> Family Folder </a></li>
+						<li class=""><a href="#"> Appointments </a></li>
+						<li class=""><a href="#"> Laboratory </a></li>
+						<li class=""><a href="#"> Queries </a></li>
+						<li class=""><a href="#"> Manage Users </a></li>
+						<li class=""><a href="#"> Merge Patient </a></li>
+						<li class=""><a href="#"> Administration </a></li>
+					</ul>
+
+				</div><!--/sidebar-->
+
+				<div class="col-md-9">
+					<h2> Content </h2>
+				</div><!--/content-->
+
+			</div>
+
+		</div>
+
+		<script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
+		<script src="<?php echo base_url(); ?>assets/js/myjquery.js"></script>
+
+	</body>
+</html>
 
 

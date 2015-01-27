@@ -1,6 +1,5 @@
 body {
 	margin: 3%;
-	background: #e0e0e0;
 }
 .my-borders{
 	border: 3px solid #b0b0b0;
@@ -8,22 +7,4 @@ body {
 .sidebar-border{
 	border-left: 1px solid #d0d0d0; 
 	font-size: 15px;
-}
-.mypadding td {
-    padding: 2px;
-}
-.mytext-width {
-    width: 200px;
-}
-.right-inner-addon {
-    position: relative;
-}
-.right-inner-addon input {
-    padding-right: 30px;    
-}
-.right-inner-addon i {
-    position: absolute;
-    right: 0px;
-    padding: 10px 12px;
-    pointer-events: none;
 }
