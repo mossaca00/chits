@@ -1,10 +1,28 @@
 body {
 	margin: 3%;
 }
+.mycontainer-width {
+	width: 75%;
+}
+.myheader-border-bottom {
+	border-bottom: 1px solid #d0d0d0;
+}
 .my-borders{
 	border: 3px solid #b0b0b0;
 }
-.sidebar-border{
+.sidebar-border-left{
 	border-left: 1px solid #d0d0d0; 
 	font-size: 15px;
 }
+.sidebar-border-right{
+	border-right: 1px solid #d0d0d0; 
+	font-size: 15px;
+}
+.footer-border {
+	border-top: 1px solid #d0d0d0;
+	margin-top: 1%;
+}
+
+
+@media (min-width: @screen-sm-min) { ... }
+
