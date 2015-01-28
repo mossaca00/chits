@@ -1,5 +1,9 @@
 body {
 	margin: 3%;
+	background: #e0e0e0;
+}
+.mycontainer-background {
+	background: #fff;
 }
 .mycontainer-width {
 	width: 75%;

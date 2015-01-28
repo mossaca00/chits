@@ -129,7 +129,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td> 4Ps </td>
+					<td><h5>4Ps</h5></td>
 					<td>
 						<div class="checkbox">
 							<label><input type="checkbox">4Ps</label>
@@ -137,11 +137,9 @@
 					</td>
 				</tr>
 				<tr>
-					<td> Cellphone </td>
+					<td><h5> Cellphone </h5></td>
 					<td>
-						<div class="checkbox">
-							<label><input type="checkbox">4Ps</label>
-						</div>
+						<input type="text" class="form-control">
 					</td>
 				</tr>
 		</table>

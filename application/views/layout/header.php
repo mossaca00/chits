@@ -8,7 +8,7 @@
 	</head>
 	<body>
 
-		<div class="container my-borders mycontainer-width ">
+		<div class="container my-borders mycontainer-background">
 			<div class="header">
 				<div class="row">
 					<div class="col-md-12">
