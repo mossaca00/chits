@@ -12,7 +12,7 @@
 			<div class="header">
 				<div class="row">
 					<div class="col-md-12">
-						<h1> Chits </h1>
+						<img src="<?php echo base_url(); ?>img/header.jpg" class="img-margin">
 					</div>
 				</div>
 				<div class="row">

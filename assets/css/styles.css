@@ -2,6 +2,10 @@ body {
 	margin: 3%;
 	background: #e0e0e0;
 }
+.img-margin{
+	padding: 2%;
+	width: 100%;
+}
 .mycontainer-background {
 	background: #fff;
 }
