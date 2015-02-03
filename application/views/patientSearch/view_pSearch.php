@@ -42,7 +42,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<a href="<?php echo base_url('admin/addPatient');?>" type="button" class="btn btn-default"> Add Patient </a>
+			<a href="<?php echo base_url('module/chits/addPatient');?>" type="button" class="btn btn-default"> Add Patient </a>
 		</div>
 	</div>
 

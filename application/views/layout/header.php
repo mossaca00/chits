@@ -12,7 +12,7 @@
 			<div class="header">
 				<div class="row">
 					<div class="col-md-12">
-						<img src="<?php echo base_url(); ?>img/header.jpg" class="img-margin">
+						<img src="<?php echo base_url(); ?>img/header.jpg" class="img-responsive img-margin">
 					</div>
 				</div>
 				<div class="row">

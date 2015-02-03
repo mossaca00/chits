@@ -2,6 +2,18 @@ body {
 	margin: 3%;
 	background: #e0e0e0;
 }
+.myinput input[placeholder]{
+	text-align: center;
+}
+.table-text td{
+	font-size: .9em;
+}
+.tbl-no-padding td, th {
+	padding: 0;
+}
+.my-padding td, th{
+	padding: 1%;
+}
 .img-margin{
 	padding: 2%;
 	width: 100%;
@@ -31,6 +43,18 @@ body {
 	margin-top: 1%;
 }
 
+.search { background-image:url(assets/images/icon_search_24.png); }
+.users { background-image:url(assets/images/icon_user_24.png); }
+.duplicate { background-image:url(assets/images/icon_users_24.png); }
+.folder { background-image:url(assets/images/icon_folder_24.png); }
+.lab { background-image:url(assets/images/icon_file_info_24.png); }
+.admin { background-image:url(assets/images/icon_wheel_24.png); }
+.appointments { background-image:url(assets/images/icon_paste_24.png); }
+.queries { background-image:url(assets/images/icon_copy_24.png); }
 
-@media (min-width: @screen-sm-min) { ... }
+
+
+@media (min-width: @screen-sm-min) { 
+	
+}
 

@@ -3,7 +3,7 @@
 	$this->load->view('layout/sidebar.php');
 ?>
 
-<div class="row sidebar-border-left">
+<div class="row">
 
 	<div class="col-md-12">
 		<h2><strong> Add Patient </strong></h2>
@@ -15,9 +15,19 @@
 	<div class="col-md-12">
 		<small> ** Required only for 'Patient' record types </small>
 	</div>
-		
+
+</div>
+
+<div class="row">
 	<div class="col-md-12">
-			<table class="table table-striped">
+		<br />
+	</div>
+</div>
+
+<div class="row">
+
+		<div class="col-md-12">
+			<table class="table-responsive table-striped my-padding">
 				<thead>
 					<th class="col-md-2">Patient ID</th>
 					<th class="col-md-10"> [New] </th>
@@ -115,15 +125,18 @@
 				<tr>
 					<td style="vertical-align:middle;"> Philhealth </td>
 					<td>
-						<div class="radio">
-							<label>
-								<input type="radio" name="PhilEnrolled" value="notEnrolled" class="radio2" checked> Not enrolled
-							</label> <br />
-							<span> Or </span> <br />
-							<label>
-								<input type="radio" name="PhilEnrolled" value="Enrolled" class="radio2"> Enrolled
-							</label>
+						<div class="form-inline">
+							<div class="radio">
+								<label>
+									<input type="radio" name="PhilEnrolled" value="notEnrolled" class="radio2" checked> Not enrolled
+								</label> 
+								<input type="text" class="form-control"><br />
+								<span> Or </span> <br />
+								<label>
+									<input type="radio" name="PhilEnrolled" value="Enrolled" class="radio2"> Enrolled
+								</label>
 
+							</div>
 						</div>
 						<?php $this->load->view('patientSearch/imports/accor_philinfo'); ?>
 					</td>
@@ -142,10 +155,76 @@
 						<input type="text" class="form-control">
 					</td>
 				</tr>
-		</table>
+				<tr>
+					<td><h5> Local ID </h5></td>
+					<td>
+						<input type="text" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td style="vertical-align:middle;"><h5> Mother's Name </h5></td>
+					<td>
+						<div class="form-inline">
+							<div class="radio">
+								<label>
+									<input type="radio" name="patientmother" value="find" class="radio3" checked> Find existing record 
+								</label>
 
+								<input type="text" class="form-control"> <br>
+
+								<span> Or </span> <br>
+
+								<label>
+									<input type="radio" name="patientmother" value="create" class="radio3"> Create new record for the patient's folder 
+								</label>
+
+							</div>
+						</div>
+						<?php $this->load->view('imports/accor_patientmother'); ?>
+					</td>
+				</tr>
+				<tr>
+					<td><h5> CRN </h5></td>
+					<td>
+						<input type="text" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td><h5> TIN </h5></td>
+					<td>
+						<input type="text" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td><h5> SSS </h5></td>
+					<td>
+						<input type="text" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td><h5> GSIS </h5></td>
+					<td>
+						<input type="text" class="form-control">
+					</td>
+				</tr>
+				<tr>
+					<td><h5> Tribe </h5></td>
+					<td>
+						<input type="text" class="form-control">
+					</td>
+				</tr>
+
+			</table>
+
+		</div>
+
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<button type="button" class="btn btn-success"> Create Patient </button>
+		<a href="<?php echo base_url('module/chits/findPatient');?>" class="btn btn-primary"> Cancel </a>
 	</div>
-
 </div>
 
 

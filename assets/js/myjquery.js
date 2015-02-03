@@ -21,3 +21,16 @@ $(".radio2").click(function(){
 	}
 });
 // add patient - philhealth info end //
+
+
+// add patient mother
+$("#pMother").css("display", "none");
+$(".radio3").click(function(){
+	if($('input[name=patientmother]:checked').val() == "find") {
+		$("#pMother").slideUp("slow");
+	}
+	if($('input[name=patientmother]:checked').val() == "create"){
+		$("#pMother").slideDown("slow");
+	}
+});
+// add patient mother end //	
