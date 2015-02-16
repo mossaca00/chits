@@ -1,4 +1,4 @@
-<div class="container" style="margin-top: 50px;">
+<div style="margin-top: 50px;">
 	<ul id="myTab" class="nav nav-tabs">
 		<li class="active"><a href="#vdetails" data-toggle="tab">Visit Details</a></li>
 		<li><a href="#sconsult" data-toggle="tab">Special Consults</a></li>
@@ -12,7 +12,7 @@
 
 	<div id="myTabContent" class="tab-content">
 		<div class="tab-pane fade in active" id="vdetails">
-			<p> Visit Details </p>
+			<?php $this->load->view('patientSearch/imports/view_visitdetails'); ?>
 		</div>
 		<div class="tab-pane fade" id="sconsult">
 			<p> Special Consults </p>
