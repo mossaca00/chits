@@ -24,7 +24,7 @@
 
 <div class="row">
 	<div class="col-md-12">
-		<table class="table table-striped table-bordered tbl-no-padding">
+		<table class="table table-striped table-condensed table-bordered tbl-no-padding">
 			<thead>
 				<th><h4><strong> Patient ID </strong></h4></th>
 				<th><h4><strong> PATIENT IDENTIFIER ID HERE </strong></h4></th>

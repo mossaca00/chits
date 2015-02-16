@@ -34,3 +34,8 @@ $(".radio3").click(function(){
 	}
 });
 // add patient mother end //	
+
+// for nav tab 
+function activaTab(tab){
+    $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+};

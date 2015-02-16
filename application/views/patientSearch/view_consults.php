@@ -58,25 +58,11 @@
 </div>
 
 <div class="row">
-	
-	<div class="col-md-12">
-
-		<ul class="nav nav-tabs">
-
-			<li role="presentation" class="active" ><a href="#"> Visit Details </a></li>
-			<li role="presentation" class=""><a href="#"> Special Consults </a></li>
-			<li role="presentation" class=""><a href="#"> Labs</a></li>
-			<li role="presentation" class=""><a href="#">Dental</a></li>
-			<li role="presentation" class=""><a href="#">Forms</a></li>
-			<li role="presentation" class=""><a href="#">Dispense Drugs</a></li>
-			<li role="presentation" class=""><a href="#">Appointments</a></li>
-			<li role="presentation" class=""><a href="#">End Consult</a></li>
-
-		</ul>
-
+	<div class="col-md-12 col-sm-12">
+		<?php $this->load->view('patientSearch/imports/navtab_consult'); ?>
 	</div>
-
 </div>
+
 
 
 <?php $this->load->view('layout/footer'); ?>

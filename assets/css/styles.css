@@ -43,17 +43,6 @@ body {
 	margin-top: 1%;
 }
 
-.search { background-image:url(assets/images/icon_search_24.png); }
-.users { background-image:url(assets/images/icon_user_24.png); }
-.duplicate { background-image:url(assets/images/icon_users_24.png); }
-.folder { background-image:url(assets/images/icon_folder_24.png); }
-.lab { background-image:url(assets/images/icon_file_info_24.png); }
-.admin { background-image:url(assets/images/icon_wheel_24.png); }
-.appointments { background-image:url(assets/images/icon_paste_24.png); }
-.queries { background-image:url(assets/images/icon_copy_24.png); }
-
-
-
 @media (min-width: @screen-sm-min) { 
 	
 }
