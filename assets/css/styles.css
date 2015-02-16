@@ -42,6 +42,12 @@ body {
 	border-top: 1px solid #d0d0d0;
 	margin-top: 1%;
 }
+.merger {
+	display: block;
+}
+.admin-list{
+	display: block;
+}
 
 @media (min-width: @screen-sm-min) { 
 	

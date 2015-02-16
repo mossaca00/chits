@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-md-3">
+	<div class="col-md-2">
 			
 		<ul class="nav nav-pills nav-stacked" aria-expanded="false">
 			<li class=""><a href="<?php echo base_url('module/chits/findPatient'); ?>"><span class="glyphicon glyphicon-search"> </span> Patient Search</a></li>
