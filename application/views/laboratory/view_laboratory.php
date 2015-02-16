@@ -171,7 +171,7 @@
 			</div><!-- End of table resposive -->
 		</div>	<!-- End of table container -->
 		<div class="col-md-12">
-			<a href="#" type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Refresh </a>
+			<a href="#" type="button" class="btn btn-default"><span class="glyphicon glyphicon-refresh"></span> Refresh </a>
 		</div>
 	</div><!-- End of row -->
 <?php 
