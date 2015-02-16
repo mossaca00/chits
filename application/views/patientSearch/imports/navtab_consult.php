@@ -18,7 +18,7 @@
 			<p> Special Consults </p>
 		</div>
 		<div class="tab-pane fade" id="labs">
-			<p> Labs </p>
+			<p> <?php $this->load->view('patientSearch/imports/view_labs'); ?> </p>
 		</div>
 		<div class="tab-pane fade" id="dental">
 			<p> Dental </p>
