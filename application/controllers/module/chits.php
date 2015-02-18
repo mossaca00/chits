@@ -36,15 +36,15 @@ class Chits extends CI_Controller {
 	}
 
 	public function queries() {
-		$this->load->view('queries/view_queries');
+		$this->load->view('queries/navtab_queries');
 	}
 
 	public function manageUsers() {
-		$this->load->view('manageusers/view_manageusers');
+		$this->load->view('manageusers/navtab_manageusers');
 	}
 
 	public function mergePatients() {
-		$this->load->view('mergepatient/view_mergepatients');
+		$this->load->view('mergepatient/navtab_mergepatient');
 	}
 
 	public function administration() {
