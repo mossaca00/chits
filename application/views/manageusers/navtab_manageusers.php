@@ -2,15 +2,15 @@
 	$this->load->view('layout/header');
 	$this->load->view('layout/sidebar');	
 ?>
-
-		<ul class="nav nav-tabs">
+	
+		<ul id="myTab" class="nav nav-tabs">
 			<li><a href="#admin" data-toggle="tab">Admin</a></li>
 			<li class="active"><a href="#user" data-toggle="tab">Manage User</a></li>
 			<li><a href="#role" data-toggle="tab">Manage Role</a></li>
 			<li><a href="#role" data-toggle="tab">Manage Privileges</a></li>
 			<li><a href="#role" data-toggle="tab">Manage Alert</a></li>
 		</ul>
-		<div class="tab-content">
+		<div id="myTabContent" class="tab-content">
 			<div class="tab-pane fade" id="admin">
 				<h1>Admin</h1>
 			</div>
@@ -27,7 +27,6 @@
 				<h1>Manage Alert</h1>
 			</div>
 		</div>
-
 
 	<!-- <div class="row">
 		<div class="col-md-12">
