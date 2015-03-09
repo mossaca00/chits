@@ -1,5 +1,5 @@
 <br />
-<div class="row">
+
 
 	<div class="col-md-6">
 		<h4>Visit Details</h4>
@@ -50,8 +50,8 @@
 					<td>no data entered!</td>
 				</tr>
 			</table> <br>
-			<a href="#" class="btn btn-default"> History </a>
-			<a href="#" class="btn btn-info"> Update </a>
+			<a href="#history_modal" class="btn btn-default" data-toggle="modal"> History </a>
+			<a href="#update_modal" class="btn btn-info" data-toggle="modal"> Update </a>
 
 		</div> <!-- /patient chart --><br>
 
@@ -71,6 +71,19 @@
 			<a href="#"> Add using RxBox </a>
 		</div>
 
-	</div> <!-- /.col-md-6 -->
+	</div> <!-- /.col-md-6 -->		
 
+
+<div class="modal fade" id="history_modal">
+	<div class="modal-dialog">
+		<?php $this->load->view('patientSearch/imports/modal_history'); ?>
+	</div>
 </div>
+
+<div class="modal fade" id="update_modal">
+	<div class="modal-dialog">
+		<?php $this->load->view('patientSearch/imports/modal_update'); ?>
+	</div>
+</div>
+
+
