@@ -1,6 +1,4 @@
-<br />
-<div class="row">
-
+<br/>
 	<div class="col-md-6">
 		<h4>Visit Details</h4>
 	</div>
@@ -50,8 +48,8 @@
 					<td>no data entered!</td>
 				</tr>
 			</table> <br>
-			<a href="#" class="btn btn-default"> History </a>
-			<a href="#" class="btn btn-info"> Update </a>
+			<a href="#history_modal" class="btn btn-default" data-toggle="modal"> History </a>
+			<a href="#update_modal" class="btn btn-info" data-toggle="modal"> Update </a>
 
 		</div> <!-- /patient chart --><br>
 
@@ -66,11 +64,32 @@
 	        </table>
 		</div>
 		<div style="margin-left: 15px">
-		 	<a href="#" class="btn btn-default"> Archive </a>
-			<a href="#" class="btn btn-info"> Create new entry </a>
+		 	<a href="#archive_modal" class="btn btn-default" data-toggle="modal"> Archive </a>
+			<a href="#entry_modal" class="btn btn-info" data-toggle="modal"> Create new entry </a>
 			<a href="#"> Add using RxBox </a>
 		</div>
+	</div> <!-- /.col-md-6 -->		
 
-	</div> <!-- /.col-md-6 -->
 
+<div class="modal fade" id="history_modal">
+	<div class="modal-dialog">
+		<?php $this->load->view('patientSearch/imports/modal_history'); ?>
+	</div>
 </div>
+<div class="modal fade" id="update_modal">
+	<div class="modal-dialog">
+		<?php $this->load->view('patientSearch/imports/modal_update'); ?>
+	</div>
+</div>
+<div class="modal fade" id="archive_modal">
+	<div class="modal-dialog">
+		<?php $this->load->view('patientSearch/imports/modal_archive'); ?>
+	</div>
+</div>
+<div class="modal fade" id="entry_modal">
+	<div class="modal-dialog">
+		<?php $this->load->view('patientSearch/imports/modal_entry'); ?>
+	</div>
+</div>
+
+
