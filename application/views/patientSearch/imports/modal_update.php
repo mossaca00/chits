@@ -10,29 +10,35 @@
 		<div class="col-md-12 table-responsive">
 			<label>Date: <input type="text"></label><label>Time: <input type="text"></label>
 			<p><small><cite>* - Required Field</cite></small></p>
-			<table class="table table-bordered table-condensed table-striped">
+			<table class="table table-condensed table-striped">
 				<tr>
-					<td><label><h5>Enter New Height:</h5></label><input type="text"></td>
+					<td><label><h5>Enter New Height:</h5></label></td>
+					<td><input type="text"></td>
 					<td><small>cm.</small></td>
 				</tr>
 				<tr>
-					<td><label><h5>Enter New Weight:</h5></label><input type="text"></td>
+					<td><label><h5>Enter New Weight:</h5></label></td>
+					<td><input type="text"></td>
 					<td><small>kg.</small></td>
 				</tr>
 				<tr>
-					<td><label><h5>Enter New Waist Circumference:</h5><input type="text"></label></td>
+					<td><label><h5>Enter New Waist Circumference:</h5></td>
+					<td><input type="text"></td>
 					<td><small>cm.</small></td>
 				</tr>
 				<tr>
-					<td><label><h5>Enter New Hip Circumference:</h5><input type="text"></label></td>
+					<td><label><h5>Enter New Hip Circumference:</h5></label></td>
+					<td><input type="text"></td>
 					<td><small>cm.</small></td>
 				</tr>
 				<tr>
-					<td><label><h5>Enter New Head Circumference:</h5><input type="text"></label></td>
+					<td><label><h5>Enter New Head Circumference:</h5></label></td>
+					<td><input type="text"></td>
 					<td><small>cm.</small></td>
 				</tr>
 				<tr>
-					<td><label><h5>Enter New Chest Circumference:</h5><input type="text"></label></td>
+					<td><label><h5>Enter New Chest Circumference:</h5></label></td>
+					<td><input type="text"></td>
 					<td><small>cm.</small></td>
 				</tr>
 			</table>
