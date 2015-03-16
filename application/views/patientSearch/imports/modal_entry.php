@@ -10,7 +10,7 @@
 		<label>Date: <input type="text"></label><label>Time: <input type="text"></label>		
 		<small>* - Required Field</small>
 		<br>
-		<table class="table table-striped table-condensed table-bordered">
+		<table class="table table-striped table-condensed">
 			<tr>
 				<td><h5>Blood Pressure:</h5></td>
 				<td><input type="text"></td>
