@@ -63,7 +63,3 @@ body {
     to { transform: scale(1) rotate(360deg);}
 }
 
-@media (min-width: @screen-sm-min) { 
-	
-}
-

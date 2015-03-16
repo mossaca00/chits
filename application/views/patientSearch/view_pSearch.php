@@ -26,11 +26,12 @@
 			<form class="form-inline" role="form">
 				<div class="form-group">
 					<label for="pName"> Patient Name: </label>
-					<input type="text" class="form-control" placeholder="Enter a name" aria-describedby="iconSearch">
+					<input id="pName" type="text" class="form-control" placeholder="Enter at least 2 characters" aria-describedby="iconSearch">
 					<span id="iconSearch" class="sr-only"> </span>
-					<small>
-						<cite> Enter at least 2 characters </cite>
-					</small>
+					<!-- <small>
+						<cite>  </cite>
+					</small> -->
+					<button type="submit" class="btn btn-default"> Search </button>
 				</div>
 			</form>
 		</div>

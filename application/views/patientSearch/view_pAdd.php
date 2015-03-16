@@ -222,8 +222,10 @@
 
 <div class="row">
 	<div class="col-md-12">
-		<button type="button" class="btn btn-success"> Create Patient </button>
-		<a href="<?php echo base_url('module/chits/findPatient');?>" class="btn btn-primary"> Cancel </a>
+		<?php echo form_open(); ?>
+			<button type="submit" class="btn btn-success"> Create Patient </button>
+			<a href="<?php echo base_url('module/chits/findPatient');?>" class="btn btn-primary"> Cancel </a>
+		</form>
 	</div>
 </div>
 
