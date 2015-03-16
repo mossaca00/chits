@@ -2,6 +2,14 @@
 
 class Users extends CI_Controller {
 
+	public function __construct() {
+		parent:: __construct();
+
+		$this->data = array(
+			'title' => 'User Management | Chits'
+		);
+	}
+
 	public function index() {
 
 		$this->usersList();
@@ -9,7 +17,7 @@ class Users extends CI_Controller {
 	}
 
 	public function usersList() {
-		$this->load->view('manageusers/navtab_manageusers');
+		$this->load->view('manageusers/navtab_manageusers', $this->data);
 	}
 
 }

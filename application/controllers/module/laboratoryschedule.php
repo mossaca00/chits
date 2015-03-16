@@ -2,6 +2,14 @@
 
 class Laboratoryschedule extends CI_Controller {
 
+	public function __construct() {
+		parent:: __construct();
+		
+		$this->data = array(
+			'title' => 'Laboratory Schedule | Chits'
+		);
+	}
+
 	public function index() {
 
 		$this->laboratory();
@@ -10,7 +18,7 @@ class Laboratoryschedule extends CI_Controller {
 
 	public function laboratory() {
 
-		$this->load->view('laboratory/view_laboratory');
+		$this->load->view('laboratory/view_laboratory', $this->data);
 
 	}
 

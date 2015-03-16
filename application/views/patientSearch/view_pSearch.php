@@ -31,9 +31,6 @@
 					<label for="pName"> Patient Name: </label>
 					<input id="pName" name="patientname" type="text" class="form-control" placeholder="Enter at least 2 characters" aria-describedby="iconSearch">
 					<span id="iconSearch" class="sr-only"> </span>
-					<!-- <small>
-						<cite>  </cite>
-					</small> -->
 					<button type="submit" class="btn btn-default"> Search </button>
 				</div>
 			</form>
@@ -93,4 +90,4 @@
 	<?php endif; ?>
 
 
-<?php $this->load->view('layout/footer.php'); ?>
+<?php $this->load->view('layout/footer'); ?>

@@ -2,13 +2,21 @@
 
 class Patients extends CI_Controller {
 
+	public function __construct() {
+		parent:: __construct();
+
+		$this->data = array(
+			'title' => 'Community Health Information Tracking System | Chits'
+		);
+	}
+
 	public function index() {
 		// $this->findpatient();
 		$this->findDuplicatePatients();
 	}
 
 	public function findDuplicatePatients() {
-		$this->load->view('mergepatient/navtab_mergepatient');
+		$this->load->view('mergepatient/navtab_mergepatient', $this->data);
 	}
 
 }

@@ -1,7 +1,5 @@
-<?php 
-	$this->load->view('layout/header');
-	$this->load->view('layout/sidebar');	
-?>
+<?php $this->load->view('layout/header'); ?>
+<?php $this->load->view('layout/sidebar'); ?>
 
 	<div class="row">
 		<div class="col-md-12">
@@ -33,6 +31,4 @@
 		</div>
 	</div>
 
-<?php 
-	$this->load->view('layout/footer');
-?>
+<?php $this->load->view('layout/footer'); ?>

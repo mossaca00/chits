@@ -2,13 +2,21 @@
 
 class Admin extends CI_Controller {
 
+	public function __construct() {
+		parent:: __construct();
+
+		$this->data = array(
+			'title' = 'Administration | Chits'
+		);
+	}
+
 	public function index() {
 		// $this->findpatient();
 		$this->administration();
 	}
 
 	public function administration() {
-		$this->load->view('admin/view_administration');
+		$this->load->view('admin/view_administration', $this->data);
 	}
 
 

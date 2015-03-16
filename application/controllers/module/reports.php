@@ -2,6 +2,14 @@
 
 class Reports extends CI_Controller {
 
+	public function __construct() {
+		parent:: __construct();
+
+		$this->data = array(
+			'title' => 'Health Center Report | Chits'
+		);
+	}
+
 	public function index() {
 
 		$this->queries();
@@ -10,7 +18,7 @@ class Reports extends CI_Controller {
 
 	public function queries() {
 
-		$this->load->view('queries/navtab_queries');
+		$this->load->view('queries/navtab_queries', $this->data);
 
 	}
 
