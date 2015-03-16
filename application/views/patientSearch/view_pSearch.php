@@ -60,16 +60,30 @@
 					<th>Middle</th>
 					<th>Family Name</th>
 					<th>Gender</th>
+					<th>Age</th>
 					<th>Birthdate</th>
 				</tr>	
 				<?php foreach($patient_result->result() as $patient): ?>
-				
+
 					<tr>
 						<td><?php echo $patient->identifier; ?> </td>
 						<td><?php echo $patient->given_name; ?> </td>
 						<td><?php echo $patient->middle_name; ?> </td>
 						<td><?php echo $patient->family_name; ?> </td>
 						<td><?php echo $patient->gender; ?> </td>
+						<td>
+							<?php
+								$birthdate = $patient->birthdate;
+
+								$datenow = $this->db->query(' SELECT CURDATE() as datenow')->row();
+								$now = $datenow->datenow;
+
+								if($birthdate) {
+									echo $age = ($now - $birthdate);
+								}
+							
+							?>
+						</td>
 						<td><?php echo $patient->birthdate; ?> </td>
 					</tr>
 
