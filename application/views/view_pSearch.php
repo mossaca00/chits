@@ -19,7 +19,8 @@
 		</div>
 		<!-- SPACE -->
 		<div class="col-md-12">
-			<form class="form-inline" role="form">
+		
+			<?php echo form_open('patients/searchPatients'); ?> 
 				<div class="form-group">
 					<label for="pName"> Patient Name: </label>
 					<input type="text" class="form-control" placeholder="Enter a name" aria-describedby="iconSearch">

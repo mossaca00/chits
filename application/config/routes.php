@@ -39,7 +39,7 @@
 */
 
 $route['default_controller'] = 'login';
-$route['login/[:(any)]'] = 'login/$1';
+$route['admin/(:any)'] = "admin_panel/$1";
 $route['404_override'] = '';
 
 
