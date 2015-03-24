@@ -4,23 +4,22 @@ class Patients extends CI_Controller {
 
 	public function __construct() {
 		parent:: __construct();
-		$this->load->model('patient/model_searchpatient');
+		$this->load->model('patient/patient_model');
 		
 		$this->data = array(
-			'title' => 'Patient Search | Chits',
-			'patient_result' => FALSE
+			'title' => 'Patient ',
+			'patient_result' => FALSE,
 		);
 	}
 
 	public function index() {
 
 		$this->findPatient();
-
 	
 	}
 
 	public function findPatient() {
-	
+
 		$this->load->view('patientSearch/view_pSearch', $this->data);
 	
 	}
@@ -29,10 +28,24 @@ class Patients extends CI_Controller {
 
 		$pname = $this->input->post('patientname');
 
-		$this->data['patient_result'] = $this->model_searchpatient->searchPatient($pname);
+		$this->data['patient_result'] = $this->patient_model->searchPatient($pname);
 
 		$this->findPatient();
 	}
 
+	public function addPatient() {
+
+		$this->load->view('patientSearch/view_pAdd', $this->data);
+	}
+
+	public function viewPatient($id) {
+
+		$this->data['patient_id'] = $id;
+
+		$this->patient_model->view_patient($id);
+
+		$this->load->view('patientSearch/view_patient', $this->data);
+
+	}
 
 }

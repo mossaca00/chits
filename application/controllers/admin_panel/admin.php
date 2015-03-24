@@ -6,7 +6,7 @@ class Admin extends CI_Controller {
 		parent:: __construct();
 
 		$this->data = array(
-			'title' = 'Administration | Chits'
+			'title' => 'Administration '
 		);
 	}
 

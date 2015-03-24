@@ -44,13 +44,13 @@
 	
 	<div class="row" style="margin-bottom: 25px;">
 		<div class="col-md-12">
-			<a href="<?php echo base_url('module/chits/addPatient');?>" type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"> </span> Add Patient </a>
+			<a href="<?php echo base_url('patients/addPatient');?>" type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"> </span> Add Patient </a>
 		</div>
 	</div>
 
 	<?php if ($patient_result): ?>
 		<div class="table-responsive">
-			<table class="table table-striped">
+			<table class="table table-striped table-hover table-bordered table-bordered">
 				<tr>
 					<th>Identifier</th>
 					<th>Given</th>
@@ -61,9 +61,8 @@
 					<th>Birthdate</th>
 				</tr>	
 				<?php foreach($patient_result->result() as $patient): ?>
-
 					<tr>
-						<td><?php echo $patient->identifier; ?> </td>
+						<td><a href="<?php echo base_url('module/patients/viewPatient/'.$patient->person_id); ?>"><?php echo $patient->identifier; ?></a></td>
 						<td><?php echo $patient->given_name; ?> </td>
 						<td><?php echo $patient->middle_name; ?> </td>
 						<td><?php echo $patient->family_name; ?> </td>
@@ -78,12 +77,10 @@
 								if($birthdate) {
 									echo $age = ($now - $birthdate);
 								}
-							
 							?>
 						</td>
 						<td><?php echo $patient->birthdate; ?> </td>
 					</tr>
-
 				<?php endforeach; ?>
 			</table>
 		</div>

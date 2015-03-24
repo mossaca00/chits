@@ -6,7 +6,7 @@ class Reports extends CI_Controller {
 		parent:: __construct();
 
 		$this->data = array(
-			'title' => 'Health Center Report | Chits'
+			'title' => 'Health Center Report '
 		);
 	}
 

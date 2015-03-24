@@ -6,7 +6,7 @@ class Patients extends CI_Controller {
 		parent:: __construct();
 
 		$this->data = array(
-			'title' => 'Community Health Information Tracking System | Chits'
+			'title' => 'Community Health Information Tracking System '
 		);
 	}
 

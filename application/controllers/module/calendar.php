@@ -6,7 +6,7 @@ class Calendar extends CI_Controller {
 		parent:: __construct();
 
 		$this->data = array(
-			'title' => 'Appointments | Chits'
+			'title' => 'Appointments '
 		);
 
 	}

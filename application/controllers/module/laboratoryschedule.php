@@ -6,7 +6,7 @@ class Laboratoryschedule extends CI_Controller {
 		parent:: __construct();
 		
 		$this->data = array(
-			'title' => 'Laboratory Schedule | Chits'
+			'title' => 'Laboratory Schedule '
 		);
 	}
 

@@ -6,7 +6,7 @@ class Familyfolder extends CI_Controller {
 		parent:: __construct();
 
 		$this->data = array(
-			'title' => 'Family Folder | Chits'
+			'title' => 'Family Folder '
 		);
 	}
 

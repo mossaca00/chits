@@ -6,7 +6,7 @@ class Users extends CI_Controller {
 		parent:: __construct();
 
 		$this->data = array(
-			'title' => 'User Management | Chits'
+			'title' => 'User Management '
 		);
 	}
 
